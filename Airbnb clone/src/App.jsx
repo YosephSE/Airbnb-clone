@@ -1,7 +1,24 @@
-import React from "react";
-import ReactDOM from 'react-dom/client'
-import Hero from "./components/Hero";
-import NavBar from "./components/NavBar";
+import React from "react"
+import hero from "./assets/logo.png"
+
+
+function NavBar(){
+  return(
+      <nav>
+          Hello
+      </nav>
+  )
+}
+
+
+function Hero(){
+    return(
+        <div>
+            <img src={hero} alt="Hero Section" />
+        </div>
+    )
+}
+
 
 function App(){
   return(
