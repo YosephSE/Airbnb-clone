@@ -1,4 +1,21 @@
-.nav-logo{
+* {
+  margin: 0;
+}
+
+.nav-logo {
   height: 50px;
-  padding: 5px 30px;
-  }
+  padding: 10px 30px;
+}
+.nav-bar {
+  background-color: #ee8b8b86;
+}
+
+.hero-icon{
+  height: 50vh;
+  padding: 40px;
+  margin: auro;
+  display: block;
+}
+.hero{
+  display: flex;
+}

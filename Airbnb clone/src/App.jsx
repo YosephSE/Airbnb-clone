@@ -1,11 +1,12 @@
 import React from "react"
-import hero from "./assets/logo.png"
+import logo from "./assets/airbnb-logo.png"
+import hero from "./assets/photo-grid.png"
 import './App.css'
 
 function NavBar(){
   return(
-      <nav>
-         <img src={hero} alt="Hero Section" className="nav-logo" />
+      <nav className="nav-bar">
+         <img src={logo} alt="Airbnb Logo" className="nav-logo" />
       </nav>
   )
 }
@@ -13,8 +14,8 @@ function NavBar(){
 
 function Hero(){
     return(
-        <div>
-            Hello
+        <div className="hero">
+            <img src={hero} alt="Hero Section"className="hero-icon"/>
         </div>
     )
 }
