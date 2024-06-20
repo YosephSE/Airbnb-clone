@@ -6,29 +6,23 @@ import rate from "../assets/rate.png";
 function Cards() {
   return (
     <div className="cards">
-      <div className="card">
-        <img src={card1} alt="Card 1" className="card-img"/>
-        <img src={rate} alt="Rate" className="rate"/>
-        <span>5.0 (6) . Online</span>
-        <p>Life Lessons with Katie Zaferes</p>
-        <p>From $136 / person</p>
-      </div>
-      <div className="card">
-        <img src={card2} alt="Card 1" className="card-img"/>
-        <img src={rate} alt="Rate" className="rate"/>
-        <span>5.0 (6) . Online</span>
-        <p>Learn Wedding Photography</p>
-        <p>From $125 / person</p>
-      </div>
-      <div className="card">
-        <img src={card3} alt="Card 1" className="card-img"/>
-        <img src={rate} alt="Rate" className="rate"/>
-        <span>5.0 (6) . Online</span>
-        <p>Life Lessons with Katie Zaferes</p>
-        <p>From $136 / person</p>
-      </div>
+      <Card img={card1}/>
+      <Card img={card2}/>
+      <Card img={card3}/>
     </div>
   );
+}
+function Card(props){
+  return(
+    <div className="card">
+        <img src={props.img} alt="Card 1" className="card-img"/>
+        <img src={rate} alt="Rate" className="rate"/>
+        <span>5.0 (6) . Online</span>
+        <p>Life Lessons with Katie Zaferes</p>
+        <p>From $136 / person</p>
+      </div>
+      
+  )
 }
 
 export default Cards;
